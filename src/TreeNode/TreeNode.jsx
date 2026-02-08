@@ -84,8 +84,7 @@ export default function TreeNode({ node, index, parentId, onUpdate, onAdd, onDel
     if (node.id === 'A') {
       setExpanded(true);
     }
-    
-  }, []);
+  }, [node.id]);
 
   return (
     <div style={{ margin: '10px 40px' }} ref={setNodeRef}>
