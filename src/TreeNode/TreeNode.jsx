@@ -81,6 +81,7 @@ export default function TreeNode({ node, index, parentId, onUpdate, onAdd, onDel
   };
 
   useEffect(() => {
+    if (!node?.id) return;
     if (node.id === 'A') {
       setExpanded(true);
     }
