@@ -84,6 +84,7 @@ export default function TreeNode({ node, index, parentId, onUpdate, onAdd, onDel
     if (node.id === 'A') {
       setExpanded(true);
     }
+    
   }, []);
 
   return (
